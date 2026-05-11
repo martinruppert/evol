@@ -1,0 +1,16 @@
+aktiveobjekte=21;
+besteobjekte=3;
+maxalter=105;
+erfolgsbewertung=1.0;
+sollerfolg=0.2;
+erfolg=0.2;
+ebmin=1e-14;
+ebmax=0.1;
+eamin=1e-20;
+gradinfo=2.0;
+startrwdf=2.0;
+zwischenausg=10000;
+verbessausg=0;
+tmess=1000;
+maxnoerf=200000;
+maxitera=1000000;

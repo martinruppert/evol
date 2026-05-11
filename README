@@ -1,0 +1,13 @@
+Hier findet sich die jeweils aktuellste Evolutionsstrategie
+fevol.w (float evol), devol.w (double evol),
+die Beispiele minibeispiel.w, lingl.w (lineares Gleichungssystem)
+sowie die Benchmarkfunktionen benchd.w (benchmarks double)
+und benchmarks.w (benchmarks float).
+
+Bauen der Programme benchd, benchmarks, lingl und minibeispiel
+erfolgt durch Aufruf von
+make
+ohne Argumente.
+
+make doc
+erzeugt die pdf’s von allen .w’s und testfuntionen.ltx.
