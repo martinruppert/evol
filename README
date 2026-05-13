@@ -10,4 +10,4 @@ make
 ohne Argumente.
 
 make doc
-erzeugt die pdf’s von allen .w’s und testfuntionen.ltx.
+erzeugt die pdf’s von allen .w’s und testfunktionen.ltx.
