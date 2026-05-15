@@ -1,5 +1,5 @@
 %-*- mode: c;-*-
-% Copyright (c) 1980-2015 Martin Ruppert.  All Rights Reserved.
+% Copyright (c) 1980-2026 Martin Ruppert.  All Rights Reserved.
 % 
 % This program is free software; you can redistribute it and/or modify
 % it under the terms of version 2 or any later version of the GNU

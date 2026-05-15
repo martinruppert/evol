@@ -61,7 +61,7 @@ benchmarks:benchmarks.c Makefile
 
 PHONY:$(cs)
 clean:
-	@dbf
+	@./dbf
 	@rm -fv *.o *.c *.cc *.h *.log ...date
 	@rm -fv .abest* .best* benchd benchmarks h
 	@rm -fv lingl minibeispiel

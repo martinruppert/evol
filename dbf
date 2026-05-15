@@ -1,0 +1,7 @@
+#!/usr/bin/sh
+set +x
+find . -name \#\*\# -exec rm -fv '{}' ';'
+find . -name \*.bak -exec rm -fv '{}' ';'
+find . -name \*~ -exec rm -fv '{}' ';'
+find . -name .\*~ -exec rm -fv '{}' ';'
+find . -name .finddups.md5sums.gz.20\* -exec rm -fv '{}' ';'

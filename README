@@ -1,13 +1,86 @@
-Hier findet sich die jeweils aktuellste Evolutionsstrategie
-fevol.w (float evol), devol.w (double evol),
+Die mehrgliedrige Evolutionsstrategie
+    mit impliziter Gradienteninformation -- evol
+
+Im Projekt evol finden sich die jeweils aktuellste
+Evolutionsstrategie fevol.w (float evol), devol.w (double evol),
 die Beispiele minibeispiel.w, lingl.w (lineares Gleichungssystem)
-sowie die Benchmarkfunktionen benchd.w (benchmarks double)
-und benchmarks.w (benchmarks float).
+sowie die Benchmarkfunktionen benchd.w (benchmarks double) und
+benchmarks.w (benchmarks float).
+
+evol kann lokal installiert werden durch Aufuf von
+
+...$ git clone https://github.com/martinruppert/evol evol
 
 Bauen der Programme benchd, benchmarks, lingl und minibeispiel
 erfolgt durch Aufruf von
-make
+
+...$ make
+
 ohne Argumente.
 
-make doc
+Danach können die Progamme aufgerufen werden.
+
+Achtung: benchd und benchmarks erzeugen ziemlich viel Output, am
+besten aufrufen mit
+
+...$ benchd > benchd.log bzw.
+...$ benchmarks > benchmarks.log.
+
+Beide Programme laufen dann mehrere Minuten.
+
+Danach liefert
+
+...$ grep Mittelw benchd.log und
+...$ grep Mittelw benchmarks.log
+
+eine Zusammenfassung der Programmläufe der Testfunktionen.
+
+Viel Spaß damit.
+
+...$ make doc
+
 erzeugt die pdf’s von allen .w’s und testfunktionen.ltx.
+
+Voraussetzungen:
+
+Die Programme ctangle, cweave, dviconcat, dvipdfm, dviselect,
+gcc, latex, make und tex müssen installiert sein.
+
+ctangle, cweave, dviconcat, dvipdfm, dviselect und tex finden
+sich im Paket texlive-binaries.
+
+latex findet sich im Paket texlive-latex-base.
+
+gcc und make gehören zum System und sollten bereits installiert
+sein.
+
+alle erzeugten Dateien können wieder gelöscht werden durch Aufruf
+vom
+
+...§ make distclean
+
+Die mehrgliedrige Evolutionsstrategie mit impliziter
+Gradienteninformation -- evol ist ein numerisches
+Optimierungsverfahren, welches die biologische Evolution
+nachahmt. Es kann eingesetzt werden bei beliebigen numerischen
+Optimierungsaufgaben und ist beliebig parallelisierbar.
+
+Den größten Nutzen von evol hat man meines Erachtens beim
+Training von in der Verarbeitungsschicht rückgekoppelten
+neuronalen Netzen (Nicht zu verwechseln mit „recurrent neural
+Nets”, welche die Ausgangsschicht auf die Eingangsschicht
+rückkoppeln.).
+
+Mir ist kein anderes Verfaren bekannt, welches dieses Training
+effizient durchführen könnte.
+
+Und mit in der Verarbeitungsschicht vollständig rückgekoppelten
+Neuronen lässt sich jedes beliebige andere Netz gleicher
+Neuronenzahl durch Streichen von Verbindungen in der
+Verarbeitungsschicht simulieren.
+
+Praktische Beispiele für den Einsatz solcher Netze sind u.a.
+Personenerkennung (nicht zu verwechseln mit Gesichtserkennung),
+Fehlererkennung in Dekor-Folien oder die Simulation beliebiger
+dynamischer Systeme (Inverses Doppelpendel als Beispiel
+chaotischer Systeme).
