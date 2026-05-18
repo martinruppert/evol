@@ -1,10 +1,11 @@
 default:minibeispiel lingl benchmarks benchd
 cs=$(patsubst %.w,%.c,$(wildcard *.w))
 dates=$(patsubst %.w,%.20*,$(wildcard *.w))
-pdfs=$(patsubst %.w,%.pdfs,$(wildcard *.w))
+pdfs=$(patsubst %.w,%.pdf,$(wildcard *.w))
 
-# doc:benchmarks.pdf fevol.pdf lingl.pdf minibeispiel.pdf
-doc: $(pdfs) testfunktionen.pdf
+# doc: $(pdfs) testfunktionen.pdf
+doc: benchd.pdf benchmarks.pdf devol.pdf fevol.pdf\
+ lingl.pdf minibeispiel.pdf testfunktionen.pdf
 
 %:%.c devol.c fevol.c
 	gcc -Wall -g -o $@ $< -lm

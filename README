@@ -39,7 +39,8 @@ Viel Spaß damit.
 
 ...$ make doc
 
-erzeugt die pdf’s von allen .w’s und testfunktionen.ltx.
+erzeugt die pdf’s der Programme, devol, fevol und
+testfunktionen.ltx.
 
 Voraussetzungen:
 

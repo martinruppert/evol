@@ -82,7 +82,7 @@
 {\obeyspaces\global\let =\ }
 \def\listing#1{\par\begingroup\setupverbatim\input#1 \endgroup}
 
-\def\title{Benchmarks f\"ur Evol (Version vom \today)}
+\def\title{Benchd f\"ur Evol (Version vom \today)}
 \def\titlefront{\null\vfill
   \centerline{\titlefont Evol Benchmarks}
   \vskip 15pt
