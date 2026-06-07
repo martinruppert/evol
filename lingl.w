@@ -128,7 +128,7 @@
 
 @ @c
 int main(){
-    int izaehl=0;
+  int izaehl=0, i;
     float x[NPAR],s[NPAR],f[NRES+1];
     izaehl = izaehl;
     setlinebuf(stdout);
@@ -143,7 +143,12 @@ int main(){
     strategie.verbessausg=0;
     strategie.maxnoerf=INT_MAX;
     rstrat(&strategie);
+    for (i=0;i<NPAR;i++){
+      x[i] = 0.;
+      s[i] = .1;
+    }
     @<Optimiere das lineare Gleichungssystem@>@;
+    printf("a=%f b=%f c=%f d=%f e=%f\n",x[0], x[1], x[2], x[3], x[4]);
     return(0);
 }
 
