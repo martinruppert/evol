@@ -12,7 +12,7 @@ float frandom(void);
 @ @<ImplementationModules@>=
 float frandom(void)
 {
-  int ihif=rand()%32767;
+  int ihif=rand()%32768;
   float hif=(float)ihif/32768.0;
   return(hif);
 }
